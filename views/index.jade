@@ -2,31 +2,63 @@ extends layout
 
 block content
   nav(class='navbar navbar-default navbar-fixed-top', role='navigation')
-    div.container
+    div.container-fluid
       div(class='navbar-header page-scroll')
-        button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='.navbar-ex1-collapse')
-          span.sr-only Toggle navigation
+        button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='#navbar-collapse')
           span(class="icon-bar")
           span(class="icon-bar")
           span(class="icon-bar")
         a(class='navbar-brand page-scroll', href='#page-top') Code:154/20000
-      div(class='collapse navbar-collapse navbar-ex1-collapse')
+      div(class='collapse navbar-collapse', id='navbar-collapse')
         ul(class='nav navbar-nav navbar-right')
-          li.hidden
-            a(class='page-scroll', href='#page-top')
           li
             a(class='page-scroll', href='#china') China
           li
-            a(class='page-scroll', href='') Tibet
+            a(class='page-scroll', href='#tibet') Tibet
           li
-            a(class='page-scroll', href='') Myanmmar
+            a(class='page-scroll', href='#myanmar') Myanmar
           li
-            a(class='page-scroll', href='') Sri Lanka
+            a(class='page-scroll', href='#srilanka') Sri Lanka
           li
-            a(class='page-scroll', href='') Thailand       
+            a(class='page-scroll', href='#thailand') Thailand
+          li
+            a(class='page-scroll', href='#strangers') Strangers            
           li.social-links
             a(href="https://twitter.com/gogogohuang")
               i(class='fa fa-twitter')
           li.social-links
             a(href="#")
               i(class='fa fa-facebook')
+              
+  div(id="intro", class="intro-div")
+    h1 Code:154/20000
+    p 
+      strong A long journey back to myself
+    img.img-responsive(src="images/index/index.jpg", style='display:block')
+    //div(class='down-arrow hidden-sm hidden-xs')
+      a(href="#china", class="page-scroll")
+          span
+  div(id="china", class='country-left-div')
+    h1 
+      a(href='#') China
+    img.img-responsive(src="images/index/china.jpg", style='display:block')
+  div(id="tibet", class='country-left-div')
+    h1 
+      a(href='#') Tibet
+    img.img-responsive(src="images/index/tibet.jpg", style='display:block')    
+  div(id="myanmar", class='country-left-div')
+    h1 
+      a(href='#') Myanmar
+    img.img-responsive(src="images/index/myanmar.jpg", style='display:block')
+  div(id="srilanka", class='country-left-div')
+    h1 
+      a(href='#') Sri Lanka
+    img.img-responsive(src="images/index/srilanka.jpg", style='display:block')
+  div(id="thailand", class='country-left-div')
+    h1 
+      a(href='#') Thailand
+    img.img-responsive(src="images/index/thailand.jpg", style='display:block')    
+  div(id="strangers", class='country-left-div')
+    h1 
+      a(href='#') Strangers
+    img.img-responsive(src="images/index/strangers.jpg", style='display:block')
