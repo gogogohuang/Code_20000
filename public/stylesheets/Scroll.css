@@ -1,7 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
 * {
     margin: 0;
     padding: 0;
+}
+
+.down-arrow {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
 
 
@@ -42,15 +47,27 @@
     white-space: nowrap;
 }
 
-.country-left-div h1 {
+.country-div p {
     position: absolute;
     width: 100%;
     margin-top: 10%;
+    padding-left: 0%;
+    z-index: 2;
+    color: white;
+    font: normal 200 48px/1 'OSWALD', sans-serif;
+    font-size: 3em;
+    text-align: left;
+}
+
+.country-left-div h1 {
+    position: absolute;
+    width: 100%;
+    margin-top: 20%;
     padding-left: 10%;
     z-index: 2;
     color: black;
     font: normal 300 64px/1 'Josefin Sans', sans-serif;
-    font-size: 4em;
+    font-size: 5em;
     text-align: left;
     white-space: nowrap;
 }
@@ -205,7 +222,7 @@
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 10px 0;
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
@@ -269,6 +286,9 @@ of those sections to manage the look and feel of the site. */
     .country-right-div p {
         font-size: 1.5em;
     }
+    .country-div p {
+        font-size: 1.5em;
+    }
 }
 
 @media(max-width:600px) {
@@ -283,5 +303,8 @@ of those sections to manage the look and feel of the site. */
     }
     .country-right-div p {
         font-size: 0.5em;
+    }
+    .country-div p {
+        font-size: larger;
     }
 }

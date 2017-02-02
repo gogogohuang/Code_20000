@@ -1,8 +1,56 @@
-body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.blur-body {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
 }
 
-a {
-    color: #00B7FF;
+.hidden-div:before {
+    content: attr(title);
+}
+
+.hidden-div {
+    position: absolute;
+    margin-top: -50%;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    opacity: .8;
+}
+
+.expand-div:::after {
+    color: : white;
+}
+
+.hidden-div::after {
+    color: white;
+}
+
+.hidden-div .cs-hidden {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    background: dimgray;
+    color: white;
+    padding: 5%;
+    white-space: pre-wrap;
+    /* css-3 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+}
+
+@media(max-width:800px) {
+    .hidden-div {
+        font-size: large;
+    }
+    .cs-hidden {
+        font-size: xx-small;
+    }
 }

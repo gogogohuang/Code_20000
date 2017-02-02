@@ -12,13 +12,14 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '8080');
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
  * Set IP
  */
-var ip = '192.168.7.5';
+/*var ip = '192.168.7.5';*/
+var ip = '192.168.7.6';
 app.set('ip', ip);
 
 /**
