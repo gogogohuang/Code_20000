@@ -19,8 +19,8 @@ app.set('port', port);
  * Set IP
  */
 /*var ip = '192.168.7.5';*/
-var ip = '192.168.7.6';
-app.set('ip', ip);
+/*var ip = '192.168.7.5';*/
+/*app.set('ip', ip)*/;
 
 /**
  * Create HTTP server.
