@@ -5,5 +5,5 @@
   3. Need internet to load all photos/
   
 #Screenshot  
-    ![image](https://github.com/gogogohuang/Code_20000/blob/master/example/Code%20154%2020000.png)
+    ![ScreenShot]](https://github.com/gogogohuang/Code_20000/blob/master/example/Code%20154%2020000.png)
 
