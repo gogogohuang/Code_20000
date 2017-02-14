@@ -4,6 +4,5 @@
   2. After launching, connect http://localhost:3000/
   3. Need internet to load all photos/
   
-#Screenshot  
-    ![ScreenShot]](https://github.com/gogogohuang/Code_20000/blob/master/example/Code%20154%2020000.png)
-
+#Screenshot
+  ![Screenshot](https://github.com/gogogohuang/Code_20000/blob/master/example/Code%20154%2020000.png)
